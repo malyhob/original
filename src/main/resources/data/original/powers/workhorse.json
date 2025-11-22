@@ -1,0 +1,13 @@
+{
+  "type": "origins:inventory",
+
+  "name": "Workhorse",
+  "description": "You have multiple bags on you, allowing you to open a second inventory.",
+  "badges": [{
+    "type": "origins:keybind",
+    "sprite": "origins:textures/gui/badge/toggle.png",
+    "text": "Exactly like the shulker origin. Open with %s"
+  }],
+
+  "drop_on_death": true
+}

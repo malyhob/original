@@ -1,0 +1,37 @@
+{
+  "type": "apoli:multiple",
+
+  "name": "Equine",
+  "description": "You are half horse.\n+50% drowning damage\nYou make horse sounds.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/iron_horse_armor.png",
+    "text": "Neigh"
+  }],
+
+  "drowning_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "entity_condition": {
+      "type": "origins:name",
+      "name": "drown"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  },
+  "sounds": {
+    "type": "origins:action_over_time",
+    "hidden": true,
+    "entity_action": {
+      "type": "origins:chance",
+      "chance": 0.1,
+
+      "action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.horse.ambient"
+      }
+    }
+  }
+}

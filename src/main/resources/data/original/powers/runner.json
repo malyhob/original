@@ -1,0 +1,44 @@
+{
+  "type": "apoli:multiple",
+
+  "name": "Runner",
+  "description": "We exist on the edge between the gloss and reality. The mirror's edge.\nIncreased movement and sneak speed.\nYou can jump higher.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/iron_boots.png",
+    "text": ""
+  }],
+  "run_speed": {
+    "type": "origins:modify_attribute",
+    "hidden": true,
+    "attribute": "minecraft:generic.movement_speed",
+    "condition": {
+      "type": "origins:sprinting"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.3
+    }
+  },
+  "sneak_speed": {
+    "type": "origins:attribute",
+    "hidden": true,
+    "condition": {
+      "type": "origins:sneaking"
+    },
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": 0.4
+    }
+  },
+  "jump_height": {
+    "type": "origins:modify_attribute",
+    "hidden": true,
+    "attribute": "additionalentityattributes:generic.jump_height",
+    "modifier": {
+      "operation": "addition",
+      "value": 2
+    }
+  }
+}

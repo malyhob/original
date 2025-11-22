@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "origins": [
+    "original:carrion",
+    "original:centaur",
+    "original:faith",
+    "original:timelord"
+  ]
+}

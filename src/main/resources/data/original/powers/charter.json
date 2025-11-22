@@ -1,0 +1,24 @@
+{
+  "name": "Charter",
+  "description": "The Infection prefers certain weapons.\n20% extra damage whilst wielding weapons from doctor4t's Arsenal mod",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/book.png"
+  }],
+
+  "type": "origins:modify_damage_dealt",
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "arsenal:big_weapons"
+      }
+    }
+  },
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 0.2
+  }
+}

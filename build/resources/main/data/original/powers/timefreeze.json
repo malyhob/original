@@ -1,0 +1,45 @@
+{
+  "type": "origins:active_self",
+  "name": "Stop",
+  "description": "Completely freeze all entities in a 7 block radius for 4 seconds. Has a 2 minute cooldown. While frozen, you cannot mine, move and are weakened severely",
+
+
+  "entity_action": {
+    "type": "origins:area_of_effect",
+    "radius": 7,
+    "shape": "sphere",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:blindness",
+            "amplifier": 10,
+            "duration": 80
+          },
+          {
+            "effect": "minecraft:slowness",
+            "amplifier": 10,
+            "duration": 80
+          },
+          {
+            "effect": "minecraft:mining_fatigue",
+            "amplifier": 10,
+            "duration": 80
+          },
+          {
+            "effect": "minecraft:weakness",
+            "amplifier": 10,
+            "duration": 80
+          }
+        ]
+      }
+    }
+  },
+  "cooldown": 2400,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 6
+  }
+}

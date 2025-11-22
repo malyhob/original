@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "original:infectious",
+    "original:charter",
+    "original:undead",
+    "original:altered",
+    "origins:carnivore",
+    "origins:more_kinetic_damage",
+    "origins:water_vulnerability"
+  ],
+  "icon": "minecraft:redstone",
+  "name": "Carrion",
+  "description": "It has chosen you as it's new host. You crave flesh, spread the disease.",
+  "order": 201,
+  "impact": 2
+}

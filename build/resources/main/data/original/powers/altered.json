@@ -1,0 +1,70 @@
+{
+  "type": "apoli:multiple",
+  "name": "Host",
+  "description": "The Infection controls you. (VISUAL)\n You take more fire damage.",
+  "badges": [{
+    "type": "origins:keybind",
+    "sprite": "origins:textures/gui/badge/toggle.png",
+    "text": "Toggle desaturation shader and armor visibility with %s"
+  }],
+
+  "one": {
+    "type": "apoli:overlay",
+    "hidden": true,
+
+    "texture": "original:textures/misc/infection_overlay.png",
+    "red": 0.4,
+    "green": 0.2,
+    "blue": 0.2,
+    "strength": 0.6,
+    "draw_mode": "nausea",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": false,
+    "hide_with_hud": true,
+    "condition": {
+      "type": "apoli:food_level",
+      "comparison": "<=",
+      "compare_to": 10
+    }
+  },
+  "toggle": {
+    "type": "origins:toggle",
+    "hidden": true,
+    "active_by_default": true,
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  },
+  "shader": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/desaturate.json",
+    "toggleable": false,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "armor": {
+    "type": "origins:prevent_feature_render",
+    "features": [
+      "armor"
+    ],
+    "hidden": true,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "fire":{
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "entity_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:fire"
+        }
+      ]
+    }
+  }
+}

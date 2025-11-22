@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "original",
+  "version": "${version}",
+  "name": "original",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/original/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.malyhob.original.Original"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "mixins": ["original.mixins.json"]
+}

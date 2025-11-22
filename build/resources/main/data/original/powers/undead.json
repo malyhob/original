@@ -1,0 +1,11 @@
+{
+  "type": "origins:entity_group",
+  "group": "undead",
+
+  "name": "Rotting Flesh",
+  "description": "You classify as undead, and probably smell really bad. Smite deals more damage to you.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/rotten_flesh.png"
+  }]
+}

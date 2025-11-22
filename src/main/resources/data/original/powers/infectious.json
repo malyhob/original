@@ -1,0 +1,24 @@
+{
+  "type": "origins:target_action_on_hit",
+
+  "name": "Infectious",
+  "description": "It spreads to all you touch.\nHave a (small) chance to give those you hit the Infection. Infected cannot use shields and have lowered health once the infection progresses.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "original:textures/gui/badge/infection.png"
+  }],
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "original:infection",
+        "duration": 6000,
+        "amplifier": 2,
+        "show_particles": true,
+        "show_icon": true
+      }
+    },
+    "chance": 0.1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "original:runner",
+    "original:sensitive",
+    "origins:more_exhaustion",
+    "origins:light_armor",
+    "origins:fall_immunity",
+    "origins:aerial_combatant",
+    "origins:fragile",
+    "origins:sprint_jump"
+  ],
+  "icon": "minecraft:leather_boots",
+  "name": "Faith",
+  "description": "Once the city used to pulse with energy. Dirty and dangerous, but alive and wonderful.",
+  "order":200,
+  "impact": 1
+}

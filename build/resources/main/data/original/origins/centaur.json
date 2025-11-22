@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "original:runner",
+    "original:large",
+    "original:equine",
+    "original:sensitive",
+    "original:workhorse",
+    "origins:vegetarian"
+  ],
+  "icon": "minecraft:saddle",
+  "name": "Centaur",
+  "description": "A mythical hybrid between a man and a horse. Not to be confused with the Minotaur.",
+  "order": 199,
+  "impact": 2
+}

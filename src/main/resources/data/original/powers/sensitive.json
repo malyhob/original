@@ -1,0 +1,45 @@
+{
+  "type": "apoli:multiple",
+
+  "name": "Sensitive",
+  "description": "You can get hurt easily.\nSlowness 1 for 5 seconds every time damage is taken\n+50% fall damage\n+25% fire damage",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/iron_chestplate.png"
+  }],
+
+  "slowness": {
+    "type": "origins:self_action_when_hit",
+    "hidden": true,
+    "cooldown": 120,
+
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:slowness",
+        "amplifier": 2,
+        "duration": 100
+      }
+    }
+  },
+  "fire_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "entity_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:fire"
+        },
+        {
+          "type": "origins:name",
+          "name": "fall"
+        }
+      ]
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  }
+}
