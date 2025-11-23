@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "original:discharge",
+    "original:robotic",
+    "original:electrical"
+  ],
+  "icon": "minecraft:iron_helmet",
+  "name": "Creation",
+  "description": "A creation of man, impervious to time, yet still vulnerable.",
+  "order": 199,
+  "impact": 3
+}

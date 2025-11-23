@@ -1,0 +1,54 @@
+{
+  "name": "Electrical",
+  "description": "You are very good at the leccy. In fact, you *are* the leccy.\nYou are built from sensitive wires and parts, but have a protective iron shell.\n+100% drowning damage,+50% explosion damage,-50% fire damage,-25% arrow damage",
+
+  "type": "apoli:multiple",
+  "drowning_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "drown"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 1
+    }
+  },
+  "explosion_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "explosion"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+  },
+  "fire_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "onFire"
+    },
+    "modifier": {
+      "operation": "multiply_base_additive",
+      "value": -0.5
+    }
+  },
+  "arrow_damage": {
+    "type": "origins:modify_damage_taken",
+    "hidden": true,
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "arrow"
+    },
+    "modifier": {
+      "operation": "multiply_base_additive",
+      "value": -0.25
+    }
+  }
+}

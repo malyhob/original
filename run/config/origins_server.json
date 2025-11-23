@@ -133,6 +133,12 @@
       "original:deconverge": true,
       "origins:claustrophobia": true,
       "original:teleport_slow": true
+    },
+    "original:creation": {
+      "enabled": true,
+      "original:discharge": true,
+      "original:robotic": true,
+      "original:electrical": true
     }
   }
 }

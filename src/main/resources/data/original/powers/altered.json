@@ -58,13 +58,17 @@
   "fire":{
     "type": "origins:modify_damage_taken",
     "hidden": true,
-    "entity_condition": {
+    "damage_condition": {
       "type": "origins:or",
       "conditions": [
         {
           "type": "origins:fire"
         }
       ]
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 1
     }
   }
 }

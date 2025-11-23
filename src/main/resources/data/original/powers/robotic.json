@@ -1,0 +1,87 @@
+{
+  "name": "Robotic",
+  "description": "You are a being of metal, and function differently from humans.\n+10% speed, -50% fall damage\nYou don't lose hunger, but cannot regenerate passively.\nYou repair yourself at times of rest, or when it is most crucial. Sleeping or killing heals you.",
+
+  "type": "apoli:multiple",
+
+  "hunger": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "set_base",
+      "value": 0
+    }
+  },
+  "healing_disable": {
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:regeneration",
+      "minecraft:instant_health"
+    ]
+  },
+  "hunger_disable": {
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+      "type": "origins:feed",
+      "food": 1,
+      "saturation": 0
+    },
+    "condition": {
+      "type": "origins:food_level",
+      "comparison": "<",
+      "compare_to": 17
+    }
+  },
+  "speed": {
+    "type": "origins:modify_attribute",
+    "hidden": true,
+    "attribute": "minecraft:generic.movement_speed",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.1
+    }
+  },
+  "fall_damage": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "name": "More kinetic damage taken",
+      "value": 0.5,
+      "operation": "multiply_base"
+    },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "*:kinetic"
+    }
+  },
+  "disable_food": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:food"
+    }
+  },
+  "status_bar": {
+    "type": "origins:status_bar_texture",
+    "texture": "original:textures/gui/robot_status_bar.png"
+  },
+
+  "heal_sleep": {
+    "type": "origins:action_on_wake_up",
+    "entity_action": {
+      "type": "origins:heal",
+      "amount": 20
+    }
+  },
+  "heal_murder": {
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+      "type": "origins:heal",
+      "amount": 6
+    },
+    "cooldown": 200,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 5
+    }
+  }
+}

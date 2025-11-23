@@ -1,0 +1,47 @@
+{
+  "name": "Discharge",
+  "description": "Lightning strikes what you are looking at.\n10 second cooldown and damages half a heart upon use.",
+
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:raycast",
+        "distance": 20,
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:lightning_bolt ~ ~ ~"
+              },
+              {
+                "type": "origins:damage",
+                "damage_type": "minecraft:lightning_bolt",
+                "amount": 3
+              }
+            ]
+          }
+        },
+        "block_action": {
+          "type": "origins:execute_command",
+          "command": "summon minecraft:lightning_bolt ~ ~ ~"
+        }
+      },
+      {
+        "type": "origins:damage",
+        "damage_type": "minecraft:magic",
+        "amount": 1
+      }
+    ]
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 10
+  }
+}

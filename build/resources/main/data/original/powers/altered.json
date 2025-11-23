@@ -1,7 +1,7 @@
 {
   "type": "apoli:multiple",
   "name": "Host",
-  "description": "The Infection controls you. (VISUAL)\n You take more fire damage.",
+  "description": "The Infection controls you. (VISUAL)\nYou take more fire damage.",
   "badges": [{
     "type": "origins:keybind",
     "sprite": "origins:textures/gui/badge/toggle.png",
@@ -58,13 +58,17 @@
   "fire":{
     "type": "origins:modify_damage_taken",
     "hidden": true,
-    "entity_condition": {
+    "damage_condition": {
       "type": "origins:or",
       "conditions": [
         {
           "type": "origins:fire"
         }
       ]
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 1
     }
   }
 }

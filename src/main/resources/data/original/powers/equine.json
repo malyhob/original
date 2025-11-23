@@ -12,7 +12,7 @@
   "drowning_damage": {
     "type": "origins:modify_damage_taken",
     "hidden": true,
-    "entity_condition": {
+    "damage_condition": {
       "type": "origins:name",
       "name": "drown"
     },
