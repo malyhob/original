@@ -33,12 +33,10 @@
     }
   },
   "jump_height": {
-    "type": "origins:modify_attribute",
-    "hidden": true,
-    "attribute": "additionalentityattributes:generic.jump_height",
+    "type": "origins:modify_jump",
     "modifier": {
       "operation": "addition",
-      "value": 2
+      "value": 0.2
     }
   }
 }
