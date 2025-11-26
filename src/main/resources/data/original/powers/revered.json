@@ -1,0 +1,10 @@
+{
+  "type": "origins:simple",
+
+  "name": "Revered",
+  "description": "They worship you as a god.\nYou buff nearby people with the Star Child origin.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "minecraft:textures/item/nether_star.png"
+  }]
+}

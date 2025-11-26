@@ -139,6 +139,26 @@
       "original:discharge": true,
       "original:robotic": true,
       "original:electrical": true
+    },
+    "original:starchild": {
+      "enabled": true,
+      "original:ascension": true,
+      "original:ascension_elytra": true,
+      "original:reverance": true,
+      "original:stargazer": true,
+      "original:trained": true,
+      "origins:aerial_combatant": true,
+      "origins:burning_wrath": true
+    },
+    "original:ancient": {
+      "enabled": true,
+      "original:ignored_by_mobs": true,
+      "original:harmony": true,
+      "original:experienced": true,
+      "original:undead": true,
+      "original:luck_of_the_ancients": true,
+      "original:revered": true,
+      "original:ancient_debuffs": true
     }
   }
 }

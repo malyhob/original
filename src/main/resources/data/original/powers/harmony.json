@@ -1,0 +1,26 @@
+{
+  "type": "apoli:multiple",
+
+  "name": "Harmony",
+  "description": "The world is riddled with your people's creations.\nMobs do not aggro. You deal 2x less damage to non-player entities.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "original:textures/gui/badge/paradajz.png"
+  }],
+
+  "mob_aggro_very_cool_waow": {
+    "type": "original:ignored_by_entity"
+  },
+  "mob_damage": {
+    "type": "origins:modify_damage_dealt",
+    "target_condition": {
+      "type": "origins:entity_type",
+      "entity_type": "minecraft:player",
+      "inverted": true
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -0.5
+    }
+  }
+}

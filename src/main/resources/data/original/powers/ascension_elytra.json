@@ -1,0 +1,11 @@
+{
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "original:ascension",
+    "comparison": ">=",
+    "compare_to": 400
+  }
+}

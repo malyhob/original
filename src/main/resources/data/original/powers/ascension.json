@@ -1,0 +1,16 @@
+{
+  "name": "Ascension",
+  "description": "Take to the skies.\nLaunch yourself into the air, and gain an elytra during the first quarter of the cooldown",
+
+  "type": "origins:launch",
+  "cooldown": 600,
+  "hud_render": {
+    "bar_index": 4
+  },
+  "sound": "minecraft:entity.parrot.fly",
+  "speed": 2,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": true
+  }
+}

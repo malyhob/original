@@ -1,0 +1,22 @@
+{
+  "name": "Stargazer",
+  "description": "You've always been fascinated by the night sky. So fascinated in fact, that you do not want to sleep.\nCannot sleep. Extra health at night.",
+
+  "type": "apoli:multiple",
+  "sleep": {
+    "type": "origins:prevent_sleep",
+    "message": "You do not want to sleep. The stars call."
+  },
+  "health": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:resistance",
+        "duration": 21,
+        "amplifier": 0
+      }
+    },
+    "interval": 20
+  }
+}

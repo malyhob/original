@@ -48,6 +48,7 @@ repositories {
         name = "Modrinth Maven"
         url = "https://api.modrinth.com/maven"
     }
+
 }
 
 dependencies {
@@ -60,6 +61,7 @@ dependencies {
     modImplementation "io.github.apace100:origins-fabric:1.10.2+mc.1.20.x"
     modImplementation "maven.modrinth:AdditionalEntityAttributes:1.7.6+1.20.1"
     modImplementation "com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1"
+
 }
 
 processResources {

@@ -12,6 +12,7 @@ public class Original implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Loading Original");
         EffectRegister.registerEffects();
+        PowerRegister.register();
         LOGGER.info("Loaded Original");
     }
 }

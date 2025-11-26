@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "original:harmony",
+    "original:experienced",
+    "original:undead",
+    "original:luck_of_the_ancients",
+    "original:revered",
+    "original:ancient_debuffs"
+  ],
+  "icon": "minecraft:rotten_flesh",
+  "name": "Ancient",
+  "description": "After thousands of years sleeping, you awaken to find the world completely different.",
+  "order": 204,
+  "impact": 2
+}

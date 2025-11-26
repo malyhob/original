@@ -11,6 +11,5 @@ public class EffectRegister {
 
     public static void registerEffects(){
         Original.LOGGER.info("Loaded effects");
-
     }
 }

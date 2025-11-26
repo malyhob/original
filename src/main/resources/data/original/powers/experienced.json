@@ -1,0 +1,10 @@
+{
+  "name": "Experienced",
+  "description": "You have lived for a long time, and so you have amassed great wisdom.\nYou gain XP 3x faster than others.",
+
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 3.0
+  }
+}

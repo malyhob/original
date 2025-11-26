@@ -1,0 +1,41 @@
+{
+  "name": "Reverance",
+  "description": "If within 30 blocks of someone with the Ancient origin, gain a jump boost and speed boost.",
+  "badges": [{
+    "type": "origins:sprite",
+    "sprite": "original:textures/gui/badge/paradajz.png"
+  }],
+
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:area_of_effect",
+    "radius": 30,
+    "shape": "sphere",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:speed",
+            "duration": 20,
+            "amplifier": 0
+          },
+          {
+            "effect": "minecraft:jump_boost",
+            "duration": 20,
+            "amplifier": 0
+          }
+        ]
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:origin",
+        "origin": "original:ancient"
+      }
+    }
+  },
+  "interval": 20
+}

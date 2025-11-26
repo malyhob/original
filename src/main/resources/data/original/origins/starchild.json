@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "original:ascension",
+    "original:ascension_elytra",
+    "original:reverance",
+    "original:stargazer",
+    "original:trained",
+    "origins:aerial_combatant",
+    "origins:burning_wrath"
+  ],
+  "icon": "minecraft:nether_star",
+  "name": "Star Child",
+  "description": "Throughout the ages of iron, bronze and stone. We marvelled at the night sky, and what may lie beyond.",
+  "order": 204,
+  "impact": 2
+}

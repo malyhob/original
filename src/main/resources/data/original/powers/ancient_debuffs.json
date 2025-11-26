@@ -1,0 +1,28 @@
+{
+  "type": "apoli:multiple",
+
+  "name": "Ancient",
+  "description": "Your body is deteriorating.\nYou have 2 hearts less than a normal human.\nYou lose hunger more quickly.\nYour eyesight is terrible. (Toggle with F4)",
+
+  "health": {
+    "type": "origins:modify_attribute",
+    "hidden": true,
+    "attribute": "minecraft:generic.max_health",
+    "modifier": {
+      "operation": "set_total",
+      "value": 16
+    }
+  },
+  "hunger": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.5
+    }
+
+  },
+  "shader": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/blobs.json"
+  }
+}

@@ -19,18 +19,7 @@
     ]
   },
   "hunger_disable": {
-    "type": "origins:action_over_time",
-    "interval": 5,
-    "entity_action": {
-      "type": "origins:feed",
-      "food": 1,
-      "saturation": 0
-    },
-    "condition": {
-      "type": "origins:food_level",
-      "comparison": "<",
-      "compare_to": 17
-    }
+    "type": "origins:disable_regen"
   },
   "speed": {
     "type": "origins:modify_attribute",
