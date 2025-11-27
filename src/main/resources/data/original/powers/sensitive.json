@@ -2,7 +2,7 @@
   "type": "apoli:multiple",
 
   "name": "Sensitive",
-  "description": "You can get hurt easily.\nSlowness 1 for 5 seconds every time damage is taken\n+50% fall damage\n+25% fire damage",
+  "description": "You can get hurt easily.\nSlowness for 5 seconds every time damage is taken\n+50% fall damage\n+25% fire damage",
   "badges": [{
     "type": "origins:sprite",
     "sprite": "minecraft:textures/item/iron_chestplate.png"
