@@ -10,6 +10,6 @@
   "icon": "minecraft:rotten_flesh",
   "name": "Ancient",
   "description": "After thousands of years sleeping, you awaken to find the world completely different.",
-  "order": 204,
+  "order": 1,
   "impact": 2
 }
