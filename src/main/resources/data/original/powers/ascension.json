@@ -3,7 +3,7 @@
   "description": "Take to the skies.\nLaunch yourself into the air, and gain an elytra during the first quarter of the cooldown",
 
   "type": "origins:launch",
-  "cooldown": 600,
+  "cooldown": 700,
   "hud_render": {
     "bar_index": 4
   },

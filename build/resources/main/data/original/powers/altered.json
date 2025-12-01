@@ -68,7 +68,7 @@
     },
     "modifier": {
       "operation": "multiply_total",
-      "value": 1
+      "value": 0.5
     }
   }
 }
