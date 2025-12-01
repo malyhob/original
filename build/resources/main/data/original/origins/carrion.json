@@ -11,6 +11,6 @@
   "icon": "minecraft:redstone",
   "name": "Carrion",
   "description": "It has chosen you as it's new host. You crave flesh, spread the disease.",
-  "order": 201,
+  "order": 2,
   "impact": 2
 }

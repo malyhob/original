@@ -4,5 +4,12 @@
   "name": "Deconvergence",
   "description": "You are a worm through time. The thunder song distorts you.\nF4 to toggle shaders",
 
-  "shader": "minecraft:shaders/post/deconverge.json"
+  "shader": "minecraft:shaders/post/deconverge.json",
+  "toggleable": false,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "original:timefreeze",
+    "comparison": ">=",
+    "compare_to": 600
+  }
 }

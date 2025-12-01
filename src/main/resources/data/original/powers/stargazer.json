@@ -17,6 +17,10 @@
         "amplifier": 0
       }
     },
-    "interval": 20
+    "interval": 20,
+    "condition": {
+      "type": "origins:daytime",
+      "inverted": true
+    }
   }
 }

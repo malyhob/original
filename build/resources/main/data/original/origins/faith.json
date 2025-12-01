@@ -12,6 +12,6 @@
   "icon": "minecraft:leather_boots",
   "name": "Faith",
   "description": "Once the city used to pulse with energy. Dirty and dangerous, but alive and wonderful.",
-  "order":200,
+  "order":5,
   "impact": 1
 }

@@ -1,6 +1,6 @@
 {
   "type": "origins:active_self",
-  "name": "Stop",
+  "name": "Time Stop",
   "description": "Completely freeze all entities in a 7 block radius for 4 seconds. Has a 2 minute cooldown. While frozen, you cannot mine, move and are weakened severely.\nAfter using this ability, you have mining fatigue until the cooldown ends.",
 
 
@@ -35,6 +35,16 @@
                 "effect": "minecraft:weakness",
                 "amplifier": 10,
                 "duration": 80
+              },
+              {
+                "effect": "original:infection",
+                "amplifier": 10,
+                "duration": 80
+              },
+              {
+                "effect": "minecraft:nausea",
+                "amplifier": 50,
+                "duration": 80
               }
             ]
           }
@@ -44,7 +54,7 @@
         "type": "origins:apply_effect",
         "effect": {
           "effect": "minecraft:slowness",
-          "duration": 1200,
+          "duration": 600,
           "amplifier": 0
         }
       }
